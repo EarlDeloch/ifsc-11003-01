@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+/* Large gray frame */
+.frame {
+  width: 1000px;
+  height: 650px;
+  margin: auto;
+  background: #e3e3e3;
+  position: relative;
+}
+
+/* Large white center panel */
+.canvas {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Large corner boxes */
+.box {
+  position: absolute;
+  width: 160px;
+  height: 140px;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Corner placement */
+.navy {
+  top: 0;
+  left: 0;
+  background: #001f3f;
+}
+
+.teal {
+  top: 0;
+  right: 0;
+  background: #00bfbf;
+}
+
+.blue {
+  bottom: 0;
+  left: 0;
+  background: #0074d9;
+}
+
+.aqua {
+  bottom: 0;
+  right: 0;
+  background: #7fdbff;
+}
+
+/* Large footer centered inside white panel */
+.footer {
+  position: absolute;
+  width: 160px;
+  height: 120px;
+  background: #666;
+  color: white;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
