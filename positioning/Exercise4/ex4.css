@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+/* Big gray frame */
+.frame {
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  background: #e3e3e3;
+  position: relative; /* positioning context for corner boxes */
+}
+
+/* White rectangle centered inside frame */
+.canvas {
+  position: absolute;
+  width: 520px;
+  height: 250px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Colored boxes – all absolutely positioned */
+.box {
+  position: absolute;
+  width: 140px;
+  height: 120px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Corner positions relative to the gray frame (.frame) */
+.navy {
+  top: 0;
+  left: 0;
+  background: #001f3f;
+}
+
+.teal {
+  top: 0;
+  right: 0;
+  background: #00bfbf;
+}
+
+.blue {
+  bottom: 0;
+  left: 0;
+  background: #0074d9;
+}
+
+.aqua {
+  bottom: 0;
+  right: 0;
+  background: #7fdbff;
+}
+
+/* Footer centered inside the white canvas */
+.footer {
+  position: absolute;
+  width: 140px;
+  height: 100px;
+  background: #666;
+  color: white;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
