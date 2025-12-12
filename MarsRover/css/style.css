@@ -1,0 +1,126 @@
+/*Box sizing*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "NASA", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+}
+
+/*Header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #001f3f;
+  padding: 10px 20px;
+}
+
+header .logo {
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff4136;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #111;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: #ff4136;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #fff;
+}
+
+/*Rovers*/
+.rovers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.rovers article {
+  max-width: 400px;
+  margin: 10px;
+  text-align: center;
+}
+
+.rovers img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*NASA lab*/
+.nasa-lab {
+  text-align: center;
+  padding: 20px;
+}
+
+.nasa-lab img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/*Timeline and lists*/
+.timeline ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin-bottom: 10px;
+}
+
+/*Footer*/
+footer {
+  background-color: #001f3f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ff4136;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
