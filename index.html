@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -12,9 +11,10 @@
 </head>
 
 <body>
-  <h1>Earl Deloch</h1>
-  <nav>
-    <ul>
+  <header>
+    <h1>Earl Deloch</h1>
+    <nav>
+      <ul class="nav-list">
         <li><a href="prototype/index.html">Prototype Assignment</a></li>
         <li><a href="positioning/index.html">Positioning Lab</a></li>
         <li><a href="Screenshot150.png">Flexbox Froggy</a></li>
@@ -30,27 +30,32 @@
         </li>
         <li><a href="MarsRover/index.html">Mars Rover Draft</a></li>
         <li><a href="MarsRoverRevised/index.html">Mars Rover Revised</a></li>
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="progressive-enhancement" aria-labelledby="pe-heading">
+      <h2 id="pe-heading">Thoughts on Progressive Enhancement</h2>
+      <p>
+        Progressive enhancement is an approach to web development that starts 
+        with the most important content and layers on more features depending on 
+        the tech used. This makes the essential information available to as many 
+        people as possible. This is important today because many people only have 
+        access to older technology. Some are only able to operate older technology, 
+        so it helps ensure that everyone is included.
+      </p>
+      <p>
+        To learn more about Progressive Enhancement, visit 
+        <a href="https://expertbeacon.com/what-is-progressive-enhancement-and-why-it-matters/" target="_blank" rel="noopener noreferrer">
+          this article
+        </a>.
+      </p>
+    </section>
+  </main>
 
-  <section class="progressive-enhancement" aria-labelledby="pe-heading">
-    <h2 id="pe-heading">Thoughts on Progressive Enhancement</h2>
-    <p>
-      Progressive enhancement is an approach to web development that starts with
-       the most important content and layers on more features depending on the tech used.
-        This makes the essential information available to as many people as possible.
-         This is important today because many people only have access to older technology.
-          It makes more information available to them. Some are only able to operate older 
-          technology, so it helps ensure that everyone is included.
-    </p>
-    <p>
-      To learn more about Progressive Enhancement, visit 
-      <a href="https://expertbeacon.com/what-is-progressive-enhancement-and-why-it-matters/" target="_blank" rel="noopener noreferrer">
-        this article
-      </a>.
-    </p>
-  </section>
-
+  <footer>
+    <p>&copy; 2025 Earl Deloch | IFSC 1310</p>
+  </footer>
 </body>
 </html>
