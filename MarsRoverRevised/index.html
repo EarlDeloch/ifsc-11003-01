@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="NASA Mars Rovers — Curiosity and Perseverance: mission overviews, images, and timeline.">
+  <meta name="robots" content="noindex">
+  <title>NASA Mars Rovers — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header role="banner" class="site-header">
+    <a href="index.html" class="logo-link" aria-label="Home">
+      <img src="images/customlogo.png" alt="Custom NASA micro-site logo" class="logo">
+    </a>
+
+    <nav role="navigation" aria-label="Main navigation" class="main-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <ul id="primary-menu" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="missionhistory.html">Mission History</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main" class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <img src="images/bannermilkyway.jpg" alt="Milky Way galaxy arcing across a star-filled sky" class="hero-image">
+      <div class="hero-copy">
+        <h1 id="hero-heading">NASA Mars Rovers</h1>
+        <p class="tagline">Robotic Explorers on the Red Planet — mission overviews, discoveries, and mission history for Curiosity and Perseverance.</p>
+      </div>
+    </section>
+
+    <section class="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Exploring Mars with Curiosity and Perseverance</h2>
+      <p>
+        Curiosity and Perseverance are robotic rovers designed to investigate Mars’ geology, climate, and past habitability. This student project summarizes mission goals, launch and landing details, and major discoveries.
+      </p>
+    </section>
+
+    <section class="rovers" aria-labelledby="rovers-heading">
+      <h2 id="rovers-heading">Featured Rovers</h2>
+
+      <article class="card" aria-labelledby="curiosity-title">
+        <img src="images/curiosity.jpg" alt="Curiosity rover on the Martian surface with arm extended" class="card-image">
+        <h3 id="curiosity-title">Curiosity</h3>
+        <p>Mission: Investigate Gale Crater to assess past habitability and study Mars' climate and geology.</p>
+        <p class="muted">Major goals: search for evidence of past water, detect organic molecules.</p>
+        <p><a href="missionhistory.html#curiosity">Launch &amp; landing timeline →</a></p>
+      </article>
+
+      <article class="card" aria-labelledby="perseverance-title">
+        <img src="images/perseverance.jpg" alt="Perseverance rover descending to Mars or parked on Martian terrain" class="card-image">
+        <h3 id="perseverance-title">Perseverance</h3>
+        <p>Mission: Seek signs of ancient life and collect rock samples for future return to Earth.</p>
+        <p class="muted">Major goals: sample caching, characterizing sample sites, technology demonstrations.</p>
+        <p><a href="missionhistory.html#perseverance">Launch &amp; landing timeline →</a></p>
+      </article>
+    </section>
+
+    <section class="gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Images from Mars &amp; JPL</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/martiansurface.jpg" alt="Rocky Martian surface with rippled soil">
+          <figcaption>Martian surface: rippled soil and rocks.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/martiansurface2.jpg" alt="Wide view of a Martian plain with distant hills">
+          <figcaption>Martian plain with distant hills.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/nasalab.jpg" alt="NASA scientists and engineers working on rover hardware in a lab">
+          <figcaption>Engineers at JPL preparing rover hardware.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <p class="disclaimer">This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
+    <p>Contact: <a href="mailto:redeloch1@ualr.edu">redeloch1@ualr.edu</a></p>
+    <p><a href="https://images.nasa.gov" target="_blank" rel="noopener noreferrer">NASA Image Archive</a> • <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA Official Site</a></p>
+  </footer>
+
+<script>
+  (function(){
+    const btn = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('primary-menu');
+    btn.addEventListener('click', function(){
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
+    });
+  })();
+</script>
+
+</body>
+</html>
